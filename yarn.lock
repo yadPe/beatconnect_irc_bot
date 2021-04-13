@@ -2149,6 +2149,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rescript/react@npm:^0.10.1":
+  version: 0.10.1
+  resolution: "@rescript/react@npm:0.10.1"
+  peerDependencies:
+    bs-platform: ^8.3.0
+    react: ^16.8.1
+    react-dom: ^16.8.1
+  checksum: 0e17fa44b537188329d87a04b385db68919eef52a80ab9683883605253182b9234b62fae00bb38d7fcb8640e1a07cac2ae139284efa0596ae5d3016733808cc1
+  languageName: node
+  linkType: hard
+
 "@sindresorhus/is@npm:^0.14.0":
   version: 0.14.0
   resolution: "@sindresorhus/is@npm:0.14.0"
@@ -3805,6 +3816,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.13.13
     "@babel/preset-env": ^7.13.12
+    "@rescript/react": ^0.10.1
     "@svgr/webpack": 5.5.0
     acorn-dynamic-import: ^4.0.0
     babel-eslint: 10.1.0
@@ -3812,8 +3824,9 @@ __metadata:
     babel-loader: 8.2.2
     babel-plugin-named-asset-import: ^0.3.7
     babel-preset-react-app: ^10.0.0
-    bs-css: ^11.0.0
-    bs-platform: 8.4.2
+    bs-css: ^14.0.1
+    bs-css-emotion: ^2.5.1
+    bs-platform: ^9.0.2
     camelcase: ^5.2.0
     case-sensitive-paths-webpack-plugin: 2.3.0
     conventional-changelog-cli: ^2.1.1
@@ -4165,24 +4178,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bs-css@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "bs-css@npm:11.0.0"
+"bs-css-emotion@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "bs-css-emotion@npm:2.5.1"
   dependencies:
-    emotion: ^10.0.7
-  checksum: 299817a12c9d21d91b43d9309c738ff8e269eaa1f89fe725fc36dbd570072d65dfcad8a086994594b7e5ce4fc3a136ec1a36a16de612032a4cb2fc5184b6d26d
+    bs-css: 14.0.1
+    emotion: ^10.0.0
+  checksum: 33041ddada03e2aafec39d9a09624f95e258260b066da9a261b8206a92b8dcb8a75d90ec4f84b037f958b32b047bd1dc52a1b665153d3b1a12865e7e564580fa
   languageName: node
   linkType: hard
 
-"bs-platform@npm:8.4.2":
-  version: 8.4.2
-  resolution: "bs-platform@npm:8.4.2"
+"bs-css@npm:14.0.1, bs-css@npm:^14.0.1":
+  version: 14.0.1
+  resolution: "bs-css@npm:14.0.1"
+  checksum: 141924555b5aef269d47dd758828211f7abe4395569f65d495dbeee5d739d520964370b80fb0e4d4327255d43f70d11081fc05b1714dba9049aa79b068ff2f64
+  languageName: node
+  linkType: hard
+
+"bs-platform@npm:^9.0.2":
+  version: 9.0.2
+  resolution: "bs-platform@npm:9.0.2"
   bin:
     bsb: bsb
     bsc: bsc
     bsrefmt: bsrefmt
     bstracing: lib/bstracing
-  checksum: 60f84c4c63809031d2e8609f90ef877174b9461d8ca8e3697c921548648a7187ddc977ce210dd2df91568c5ffc46a8ffe16dcf8836ddb6637d6dcbaaef306a08
+  checksum: 3daf9d829a3faeacc8e4d97a18a8a75a5d89363d4cd6ef717dc294bb43a2c8427fc245fde1f690da68a307cbf847b7ec0d87d94f676f6a7a48bc360eaccb5395
   languageName: node
   linkType: hard
 
@@ -6405,7 +6426,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"emotion@npm:^10.0.7":
+"emotion@npm:^10.0.0":
   version: 10.0.27
   resolution: "emotion@npm:10.0.27"
   dependencies:

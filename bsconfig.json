@@ -17,6 +17,6 @@
   ],
   "suffix": ".bs.js",
   "namespace": true,
-  "bs-dependencies": ["reason-react", "bs-css"],
+  "bs-dependencies": ["@rescript/react", "bs-css", "bs-css-emotion"],
   "refmt": 3
 }

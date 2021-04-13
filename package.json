@@ -101,6 +101,8 @@
     }
   },
   "dependencies": {
+    "@rescript/react": "^0.10.1",
+    "bs-css-emotion": "^2.5.1",
     "electron-is-dev": "^1.1.0",
     "electron-log": "^4.3.4",
     "electron-updater": "^4.3.8",
@@ -132,8 +134,8 @@
     "babel-loader": "8.2.2",
     "babel-plugin-named-asset-import": "^0.3.7",
     "babel-preset-react-app": "^10.0.0",
-    "bs-css": "^11.0.0",
-    "bs-platform": "8.4.2",
+    "bs-css": "^14.0.1",
+    "bs-platform": "^9.0.2",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.3.0",
     "conventional-changelog-cli": "^2.1.1",
