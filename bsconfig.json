@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/rescript-lang/rescript-compiler/master/docs/docson/build-schema.json",
   "name": "beatconnect_client",
   "reason": {
     "react-jsx": 3
@@ -11,12 +12,11 @@
   ],
   "package-specs": [
     {
-      "module": "commonjs",
+      "module": "es6",
       "in-source": true
     }
   ],
   "suffix": ".bs.js",
   "namespace": true,
-  "bs-dependencies": ["reason-react", "bs-css"],
-  "refmt": 3
+  "bs-dependencies": ["@rescript/react", "bs-css", "bs-css-emotion"]
 }

@@ -7,43 +7,36 @@ type playingState = {
   muted: bool,
   hasNext: bool,
   hasPrev: bool,
-};
+}
 
 type song = {
   id: int,
   artist: string,
   title: string,
-};
+}
 
 type playlistItem = {
   id: int,
   path: string,
   title: string,
   artist: string,
-};
+}
 
-type playlist = array(playlistItem);
+type playlist = array<playlistItem>
 
 type value = {
-  playingState,
-  playlist,
+  playingState: playingState,
+  playlist: playlist,
   playlistID: string,
-  setPlaylist:
-    (~beatmapPlaylist: playlist, ~playlistID: string=?, unit) => unit,
-  setAudio:
-    (
-      ~song: song,
-      ~audioFilePath: option(string),
-      ~previewOffset: option(int)
-    ) =>
-    unit,
+  setPlaylist: (~beatmapPlaylist: playlist, ~playlistID: string=?, unit) => unit,
+  setAudio: (~song: song, ~audioFilePath: option<string>, ~previewOffset: option<int>) => unit,
   setVolume: float => unit,
   pause: unit => unit,
   togglePlayPause: unit => unit,
   setMuted: bool => unit,
   playNext: unit => unit,
   playPrevious: unit => unit,
-};
+}
 
 let initialState: playingState = {
   artist: "",
@@ -54,36 +47,32 @@ let initialState: playingState = {
   muted: false,
   hasNext: false,
   hasPrev: false,
-};
+}
 
 module Provider = {
+  @@warning("-27")
   let value = {
     playingState: initialState,
-    playlist: [||],
+    playlist: [],
     playlistID: "",
     setPlaylist: (~beatmapPlaylist: playlist, ~playlistID=?, unit) => unit,
-    setAudio:
-      (
-        ~song: song,
-        ~audioFilePath: option(string),
-        ~previewOffset: option(int),
-      ) =>
-      (),
-    setVolume: (vol: float) => (),
+    setAudio: (~song: song, ~audioFilePath: option<string>, ~previewOffset: option<int>) => (),
+    setVolume: (_vol: float) => (),
     pause: () => (),
     togglePlayPause: () => (),
-    setMuted: (muted: bool) => (),
+    setMuted: (_muted: bool) => (),
     playNext: () => (),
     playPrevious: () => (),
-  };
-  let audioPlayerContext = React.createContext(value);
+  }
+  let audioPlayerContext = React.createContext(value)
 
-  let makeProps = (~value, ~children, ()) => {
-    "value": value,
-    "children": children,
-  };
+  let makeProps = (~value, ~children, ()) =>
+    {
+      "value": value,
+      "children": children,
+    }
 
-  let make = React.Context.provider(audioPlayerContext);
-};
+  let make = React.Context.provider(audioPlayerContext)
+}
 
-let useAudioPlayer = () => React.useContext(Provider.audioPlayerContext);
+let useAudioPlayer = () => React.useContext(Provider.audioPlayerContext)
