@@ -3873,7 +3873,6 @@ __metadata:
     react-jss: ^10.6.0
     react-redux: ^7.2.3
     react-window: ^1.8.6
-    reason-react: ^0.7.1
     redux: ^4.0.5
     resolve: 1.17.0
     semver: 6.0.0
@@ -12883,7 +12882,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-dom@npm:>=16.8.1, react-dom@npm:^17.0.2":
+"react-dom@npm:^17.0.2":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
   dependencies:
@@ -12973,7 +12972,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react@npm:>=16.8.1, react@npm:^17.0.2":
+"react@npm:^17.0.2":
   version: 17.0.2
   resolution: "react@npm:17.0.2"
   dependencies:
@@ -13144,16 +13143,6 @@ fsevents@^1.2.7:
   dependencies:
     util.promisify: ^1.0.0
   checksum: 67ce6bdaf8f8dd2a85e771b7b79b74b8a47299315a0a3553947df1ab4117de80d1910a2ba856a480d9e4284172cf8d7df209117f5522475e30bb7ecdee63b75b
-  languageName: node
-  linkType: hard
-
-"reason-react@npm:^0.7.1":
-  version: 0.7.1
-  resolution: "reason-react@npm:0.7.1"
-  dependencies:
-    react: ">=16.8.1"
-    react-dom: ">=16.8.1"
-  checksum: 66f0aa4817ad90db10e61dd18e7e6c5ee517dd54f6ad39c69cfdcfba03aecc2e330a3299fd735a3e7c781ae8f0b7b818c1eabcd42b38abae4eb23db3ddbece16
   languageName: node
   linkType: hard
 
