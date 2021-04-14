@@ -101,8 +101,6 @@
     }
   },
   "dependencies": {
-    "@rescript/react": "^0.10.1",
-    "bs-css-emotion": "^2.5.1",
     "electron-is-dev": "^1.1.0",
     "electron-log": "^4.3.4",
     "electron-updater": "^4.3.8",
@@ -127,6 +125,7 @@
   "devDependencies": {
     "@babel/core": "7.13.13",
     "@babel/preset-env": "^7.13.12",
+    "@rescript/react": "^0.10.1",
     "@svgr/webpack": "5.5.0",
     "acorn-dynamic-import": "^4.0.0",
     "babel-eslint": "10.1.0",
@@ -135,6 +134,7 @@
     "babel-plugin-named-asset-import": "^0.3.7",
     "babel-preset-react-app": "^10.0.0",
     "bs-css": "^14.0.1",
+    "bs-css-emotion": "^2.5.1",
     "bs-platform": "^9.0.2",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.3.0",
