@@ -2149,14 +2149,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rescript/react@npm:^0.10.1":
-  version: 0.10.1
-  resolution: "@rescript/react@npm:0.10.1"
+"@rescript/react@npm:^0.10.2":
+  version: 0.10.2
+  resolution: "@rescript/react@npm:0.10.2"
   peerDependencies:
-    bs-platform: ^8.3.0
-    react: ^16.8.1
-    react-dom: ^16.8.1
-  checksum: 0e17fa44b537188329d87a04b385db68919eef52a80ab9683883605253182b9234b62fae00bb38d7fcb8640e1a07cac2ae139284efa0596ae5d3016733808cc1
+    bs-platform: ">=8.3.0"
+    react: ">=16.8.1"
+    react-dom: ">=16.8.1"
+  checksum: 9c781e8bf9cf0ba1c6066da502bc6fd67fb3b186b192df0f6eebf86138571261c77fd38e1776fd0c315f3e18191d8a12e5629e925d1e21e4215af17f80f16eff
   languageName: node
   linkType: hard
 
@@ -3816,7 +3816,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.13.13
     "@babel/preset-env": ^7.13.12
-    "@rescript/react": ^0.10.1
+    "@rescript/react": ^0.10.2
     "@svgr/webpack": 5.5.0
     acorn-dynamic-import: ^4.0.0
     babel-eslint: 10.1.0
